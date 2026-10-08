@@ -55,13 +55,10 @@ The goal was to build the UI from scratch without following a tutorial or copyin
 - Hover interactions
 - Responsive centered layout
 
-## 📸 Reference UI
 
-![Reference UI](./UI-Image.png)
+## 📸 UI
 
-## 📸 My Result
-
-![My Product Card](./screenshot.png)
+![My Product Card](./Screenshot.png)
 
 ## ⏱️ Time
 
