@@ -1,0 +1,5 @@
+{
+    "tailwindCSS.emmetCompletions": true,
+    "emmet.triggerExpansionOnTab": true,
+    "editor.defaultFormatter": "vscode.html-language-features"
+}

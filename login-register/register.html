@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Register | MyApp</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+  >
+</head>
+
+<body>
+  <main class="form-container">
+    <form action="#" method="post">
+
+      <section class="form-left">
+        <h3>MyApp</h3>
+
+        <h2>Create Your Account</h2>
+        <p>Join us and get started with your journey.</p>
+
+        <img
+          src="./assets/images/register.png"
+          alt="Account registration illustration"
+        >
+      </section>
+
+      <section class="form-right">
+        <h1 class="login">Register</h1>
+
+        <p class="dis-text">
+          Fill in your details to create your account
+        </p>
+
+        <div class="input">
+          <div>
+            <i class="fa-solid fa-user icon" aria-hidden="true"></i>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Full name"
+              autocomplete="name"
+              aria-label="Full name"
+              required
+            >
+          </div>
+
+          <div>
+            <i class="fa-regular fa-envelope icon" aria-hidden="true"></i>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email address"
+              autocomplete="email"
+              aria-label="Email address"
+              required
+            >
+          </div>
+
+          <div>
+            <i class="fa-solid fa-lock icon" aria-hidden="true"></i>
+
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              autocomplete="new-password"
+              minlength="8"
+              aria-label="Password"
+              required
+            >
+
+            <i
+              class="fa-regular fa-eye-slash icon icon-eye"
+              aria-hidden="true"
+            ></i>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-lock icon" aria-hidden="true"></i>
+
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="Confirm password"
+              autocomplete="new-password"
+              minlength="8"
+              aria-label="Confirm password"
+              required
+            >
+
+            <i
+              class="fa-regular fa-eye-slash icon icon-eye"
+              aria-hidden="true"
+            ></i>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button type="submit" class="login-btn">
+            Create Account
+          </button>
+        </div>
+
+        <p class="reg">
+          Already have an account?
+          <a href="./index.html">Login</a>
+        </p>
+      </section>
+
+    </form>
+  </main>
+</body>
+</html>

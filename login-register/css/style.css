@@ -1,0 +1,288 @@
+
+/* 1. Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #dfe4fa;
+}
+
+p {
+  color: #808080;
+}
+
+a {
+  color: #4b19c9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 2. Main card */
+.form-container {
+  width: min(900px, 100%);
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.form-container form {
+  display: flex;
+  align-items: stretch;
+}
+
+/* 3. Left illustration panel */
+.form-left {
+  flex: 0 0 32%;
+  padding: 40px 28px;
+  background: #c2caf7;
+  border-radius: 0 20px 20px 0;
+}
+
+.form-left h3 {
+  margin-bottom: 70px;
+  font-size: 24px;
+}
+
+.form-left h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.form-left p {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+.form-left img {
+  display: block;
+  width: min(180px, 100%);
+  height: auto;
+  margin: 24px auto 0;
+}
+
+/* 4. Form panel */
+.form-right {
+  flex: 1;
+  min-width: 0;
+  padding: 36px 44px;
+}
+
+.form-right > .login {
+  font-size: 32px;
+}
+
+.dis-text {
+  margin: 12px 0 26px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* 5. Inputs */
+.input {
+  display: grid;
+  gap: 14px;
+  padding: 4px 0;
+}
+
+.input > div {
+  position: relative;
+}
+
+.input input {
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 42px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.input input:focus {
+  outline: 2px solid #6930ee;
+  outline-offset: 1px;
+  border-color: #6930ee;
+}
+
+.input .icon,
+.input .fa-user {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #808080;
+}
+
+.input .icon-eye {
+  left: auto;
+  right: 14px;
+}
+
+/* 6. Remember me and forgot password */
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.wrap label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+}
+
+.wrap input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+/* 7. Buttons */
+.buttons {
+  display: grid;
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.login-btn,
+.google-btn {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease,
+              color 0.2s ease;
+}
+
+.login-btn {
+  border: none;
+  background: #662dec;
+  color: white;
+}
+
+.login-btn:hover {
+  background: #4f1bc5;
+}
+
+.google-btn {
+  border: 1px solid #999;
+  background: #f5f5f5;
+}
+
+.google-btn:hover {
+  background: #ece7ff;
+}
+
+.fa-google {
+  margin-right: 10px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #333;
+}
+
+.line::before,
+.line::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.reg {
+  margin-top: 12px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* 8. Tablet and mobile */
+@media (max-width: 700px) {
+  body {
+    padding: 16px;
+    place-items: start center;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .form-container form {
+    flex-direction: column;
+  }
+
+  .form-left {
+    flex-basis: auto;
+    padding: 24px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .form-left h3 {
+    margin-bottom: 22px;
+  }
+
+  .form-left h2 {
+    font-size: 25px;
+  }
+
+  .form-left p {
+    margin-bottom: 12px;
+  }
+
+  .form-left img {
+    width: 110px;
+    margin-top: 12px;
+  }
+
+  .form-right {
+    padding: 28px 24px;
+  }
+
+  .form-right > .login {
+    font-size: 28px;
+  }
+}
+
+/* 9. Very narrow phones */
+@media (max-width: 360px) {
+  body {
+    padding: 8px;
+  }
+
+  .form-left,
+  .form-right {
+    padding: 20px 16px;
+  }
+
+  .wrap {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .input input {
+    font-size: 14px;
+  }
+}
