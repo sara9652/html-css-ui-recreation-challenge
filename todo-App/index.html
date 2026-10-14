@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskPro - To-Do List</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="./assets/images/TaskProLogo.png" alt="logo-todoPro" >
+        </div>
+
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-link active" data-filter="all">
+                    <i class="fa-solid fa-house"></i>
+                    <span>All Task</span>
+                    <span class="count" id="all-count">0</span>
+                </a>
+
+                <a href="#" class="nav-link" data-filter="today">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Today</span>
+                    <span class="count" id="today-count">0</span>
+                </a>
+
+                <a href="#" class="nav-link" data-filter="important">
+                    <i class="fa-solid fa-star"></i>
+                    <span>Important</span>
+                    <span class="count" id="important-count">0</span>
+
+                </a>
+                    <a href="#" class="nav-link" data-filter="completed">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Completed</span>
+                    <span class="count" id="completed-count">0</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Small steps make big progress!</p>
+            </div>
+
+    </aside>
+
+    <!-- Sidebar End -->
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Top Navigation -->
+
+        <header class="topbar">
+
+            <div class="page-heading">
+                <h1>All Tasks</h1>
+                <p>Keep going you're doing great.</p>
+            </div>
+
+            <div class="topbar-actions">
+                <label class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input 
+                        type="search"
+                        id="search-input"
+                        placeholder="search tasks..."
+                        aria-label="search-tasks"
+                    >
+                </label>
+
+                <button type="button" class="add-task-btn" id="add-task-btn">
+                    <i class="fa-solid fa-plus"></i>
+                    Add Task
+                </button>
+            </div>
+        </header>
+
+        <!-- Add Task Form -->
+         <section class="add-task-section" id="add-task-section" hidden>
+            <h2>Add a New Task</h2>
+
+            <form  id="task-form" novalidate>
+                <label for="task-title">Task title</label>
+                <input 
+                    type="text"
+                    id="task-title"
+                    name="title"
+                    placeholder="Enter task title"
+                    required
+                >
+
+                <label for="task-priority">Priority</label>
+                <select name="priority" id="task-priority">
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                </select>
+
+                <label for="task-date">Due date</label>
+                <input 
+                    type="date"
+                    id="task-date"
+                    name="date"
+                >
+
+                <button type="submit" class="save-task-btn">Save Task</button>
+                <button type="button" id="cancel-task-btn">Cancel</button>
+            </form>
+         </section>
+
+         <!-- Task List -->
+          <section class="task-section">
+
+            <div class="section-heading">
+                <h2>Your tasks</h2>
+            </div>
+
+            <div class="task-list" id="task-list">
+
+                <!-- Example task card -->
+
+            </div>
+            <p id="empty-message">No tasks yet. Add your first task!</p>
+
+        </section>
+
+    </main>
+
+    <!-- Progress Panel -->
+     <aside class="progress-panel">
+
+        <!-- todat's progress -->
+        <section class="panel-card">
+            
+            <h2>Today's Progress</h2>
+            
+            <div class="progress-info">
+                <div class="progress-circle" id="progress-circle">
+                    <span class="progress-percent" id="progress-percent">0%</span>
+                </div>
+                <div>
+                    <h3 id="completed-summary">0 / 0</h3>
+                    <p>Completed</p>
+                </div>
+        </div>
+     </section>
+
+     <!-- Quick Filter-panel -->
+      <section class="panel-card">
+
+        <h2>Quick Filters</h2>
+
+            <div class="quick-filter">
+                <button type="button" data-filter="all">All Tasks</button>
+                <button type="button" data-filter="today">Today</button>
+                <button type="button" data-filter="important">Important</button>
+                <button type="button" data-filter="completed">Completed</button>
+            </div>
+
+    </section>
+    
+    <!-- Motivation Card -->
+     <section class="panel-card motivation-card">
+
+        <i class="fa-solid fa-sun"></i>
+        <h2>Good Morning!</h2>
+        <p>Stay focused, keep going!</p>
+
+     </section>
+    
+</aside>
+
+<!-- Javascript -->
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
