@@ -115,13 +115,13 @@ nav {
 ========================= */
 .hero {
     max-width: 1200px;
-    min-height: 560px;
+    min-height: 540px;
     margin: 0 auto;
-    padding: 80px 24px;
+    padding: 10px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 56px;
+    /* gap: 56px; */
 }
 
 .hero-content {
@@ -131,7 +131,7 @@ nav {
 
 .tagline {
     display: inline-block;
-    margin-bottom: 22px;
+    margin-bottom: 10px;
     padding: 7px 14px;
     border-radius: 50px;
     background-color: #eeeaff;
