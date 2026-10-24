@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact_Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="contact-info">
+        <h3 class="contact-title">Contact information</h3>
+        <p>
+          <span><i class="fa-solid fa-location-dot"></i></span>123 pine
+          street,white fields,KA
+        </p>
+        <p>
+          <span><i class="fa-regular fa-envelope"></i></span>contact@gmail.com
+        </p>
+        <p>
+          <span><i class="fa-solid fa-phone"></i></span>+91 1234567890
+        </p>
+        <div class="links">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <!-- Form section -->
+      <div class="form">
+        <h2>Contact Us</h2>
+
+        <form action="">
+          <div class="label-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter full name"
+              required
+            />
+          </div>
+
+          <div class="label-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter email"
+              required
+            />
+          </div>
+
+          <div class="label-group">
+            <label for="number">Phone Number</label>
+            <input
+              type="tel"
+              name="number"
+              id="number"
+              placeholder="Enter phone number"
+              required
+            />
+          </div>
+
+          <div class="label-group">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="4"
+              placeholder="Enter your message here..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
