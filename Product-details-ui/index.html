@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stride - Product Details</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="logo">stride<span>.</span></a>
+
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Collections</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-button" aria-label="Search">⌕</button>
+        <button class="icon-button" aria-label="Wishlist">♡</button>
+        <button class="cart-button">Cart <span>0</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="#">Home</a>
+    <span>/</span>
+    <a href="#">Men</a>
+    <span>/</span>
+    <a href="#">Shoes</a>
+    <span>/</span>
+    <span class="current">Air Flex Runner</span>
+  </div>
+
+  <!-- Product Details -->
+  <main class="product-container">
+
+    <!-- Product Gallery -->
+    <section class="product-gallery" aria-label="Product images">
+
+      <div class="thumbnail-list">
+        <button class="thumbnail active" aria-label="Front view">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=200&q=80" alt="Shoe front view">
+        </button>
+
+        <button class="thumbnail" aria-label="Side view">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=200&q=80" alt="Shoe side view">
+        </button>
+
+        <button class="thumbnail" aria-label="Close-up view">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=200&q=80" alt="Shoe detail view">
+        </button>
+
+        <button class="thumbnail" aria-label="Back view">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=200&q=80" alt="Shoe back view">
+        </button>
+      </div>
+
+      <div class="main-image">
+        <span class="sale-badge">-29% OFF</span>
+        <button class="wishlist-button" aria-label="Add to wishlist">♡</button>
+
+        <img
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=85"
+          alt="Red Air Flex Runner sports shoe"
+        >
+      </div>
+    </section>
+
+    <!-- Product Information -->
+    <section class="product-info">
+
+      <p class="category-label">MEN'S RUNNING COLLECTION</p>
+
+      <h1>Air Flex Runner</h1>
+
+      <p class="subtitle">
+        Lightweight performance shoes for everyday comfort.
+      </p>
+
+      <div class="rating-row">
+        <span class="stars">★★★★★</span>
+        <span class="rating-number">4.8</span>
+        <a href="#reviews" class="review-link">(120 reviews)</a>
+      </div>
+
+      <div class="price-row">
+        <span class="current-price">₹2,499</span>
+        <span class="old-price">₹3,499</span>
+        <span class="discount">Save 29%</span>
+      </div>
+
+      <p class="tax-note">Inclusive of all taxes</p>
+
+      <div class="divider"></div>
+
+      <!-- Color Selection -->
+      <div class="option-group">
+        <div class="option-heading">
+          <h3>Color</h3>
+          <span>Red / White</span>
+        </div>
+
+        <div class="color-options">
+          <button class="color-swatch red active" aria-label="Red color"></button>
+          <button class="color-swatch black" aria-label="Black color"></button>
+          <button class="color-swatch blue" aria-label="Blue color"></button>
+        </div>
+      </div>
+
+      <!-- Size Selection -->
+      <div class="option-group">
+        <div class="option-heading">
+          <h3>Select Size</h3>
+          <a href="#">Size guide</a>
+        </div>
+
+        <div class="size-options">
+          <button class="size-button">6</button>
+          <button class="size-button">7</button>
+          <button class="size-button active">8</button>
+          <button class="size-button">9</button>
+          <button class="size-button">10</button>
+          <button class="size-button disabled" disabled>11</button>
+        </div>
+
+        <p class="size-note">Size 11 is currently unavailable.</p>
+      </div>
+
+      <!-- Quantity -->
+      <div class="option-group">
+        <h3>Quantity</h3>
+
+        <div class="quantity-control">
+          <button type="button" aria-label="Decrease quantity">−</button>
+          <span>1</span>
+          <button type="button" aria-label="Increase quantity">+</button>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="purchase-actions">
+        <button class="add-to-cart">Add to Cart <span>→</span></button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+
+      <!-- Delivery -->
+      <div class="delivery-box">
+        <div class="delivery-icon">↗</div>
+        <div>
+          <h4>Free delivery</h4>
+          <p>Get it delivered within 3–5 business days.</p>
+        </div>
+      </div>
+
+      <div class="delivery-box">
+        <div class="delivery-icon">↺</div>
+        <div>
+          <h4>Easy 7-day returns</h4>
+          <p>Return eligible products within 7 days.</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Product Description -->
+  <section class="description-section">
+    <div class="section-heading">
+      <p class="category-label">MADE FOR MOVEMENT</p>
+      <h2>Comfort in every step.</h2>
+    </div>
+
+    <p class="description-text">
+      Air Flex Runner combines a lightweight design with a cushioned sole
+      and breathable upper. Designed for daily walks, workouts and casual
+      outfits, it delivers comfort throughout your day.
+    </p>
+
+    <div class="feature-grid">
+      <article class="feature-card">
+        <span class="feature-icon">01</span>
+        <h3>Lightweight Design</h3>
+        <p>Move freely with a lightweight construction.</p>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-icon">02</span>
+        <h3>Soft Cushioning</h3>
+        <p>Enjoy a comfortable feel with every step.</p>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-icon">03</span>
+        <h3>Breathable Upper</h3>
+        <p>Designed to keep your feet comfortable.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews-section" id="reviews">
+    <div>
+      <p class="category-label">CUSTOMER FEEDBACK</p>
+      <h2>What customers say</h2>
+    </div>
+
+    <article class="review-card">
+      <div class="review-top">
+        <div>
+          <h3>Rahul K.</h3>
+          <p>Verified purchase</p>
+        </div>
+        <span class="stars">★★★★★</span>
+      </div>
+
+      <p>
+        "Very comfortable for daily walking. The design looks great
+        and the shoes feel lightweight."
+      </p>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#" class="logo">stride<span>.</span></a>
+    <p>Move better. Feel better.</p>
+    <p>© 2026 Stride. Demo project for learning.</p>
+  </footer>
+
+</body>
+</html>
